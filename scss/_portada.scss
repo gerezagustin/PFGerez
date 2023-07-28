@@ -1,0 +1,12 @@
+.portada{
+    height: 400px;
+    background-image: url(../multimedia/Otros/persona-tatuando.png) ;
+    background-size: cover;
+    background-attachment: fixed;
+    @include tablet{
+        height: 200px;
+    }
+    @include mobile{
+        background-attachment: local;
+    }
+}

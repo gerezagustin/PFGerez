@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*hago un reset de los ul porque bootstrap por defecto les agrega padding y margin*/
+}
+* ul {
+  padding: 0;
+  margin: 0;
+}
+
+/*  font-family: 'Style Script', cursive;  */
+/*  font-family: 'Poppins', sans-serif;  */
+.listaTatuInicio ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.nav {
+  background-color: rgb(236, 195, 139);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .nav {
+    flex-direction: row;
+  }
+}
+.nav .nav-item {
+  visibility: hidden;
+}
+@media (max-width: 576px) {
+  .nav .nav-item {
+    visibility: visible;
+    font-size: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+  }
+  .nav .nav-item:hover + ul {
+    top: 80px;
+  }
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+@media (max-width: 576px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    top: -500px;
+    right: 0px;
+    position: absolute;
+    background-color: rgb(236, 195, 139);
+    transition: 1s;
+  }
+  .nav ul:hover {
+    top: 80px;
+  }
+}
+.nav ul li a {
+  text-decoration: none;
+  font-family: "Style Script", cursive;
+  color: darkblue;
+  display: block;
+  padding: 10px 20px;
+  font-size: 30px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .nav ul li a {
+    font-size: 40px;
+  }
+}
+
+.portada {
+  height: 400px;
+  background-image: url(../multimedia/Otros/persona-tatuando.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+@media (max-width: 768px) {
+  .portada {
+    height: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .portada {
+    background-attachment: local;
+  }
+}
+
+.listaTatuInicio {
+  background-color: rgb(236, 195, 139);
+  padding: 10px;
+  justify-content: center;
+}
+.listaTatuInicio ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(5, 300px);
+  gap: 20px;
+}
+.listaTatuInicio ul li img {
+  border-radius: 7px;
+}
+
+.grid-inicio_img1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.grid-inicio_img2 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.grid-inicio_img3 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.grid-inicio_img4 {
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+
+.grid-inicio_img5 {
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
+
+.grid-inicio_img6 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.grid-inicio_img7 {
+  grid-column: 4/5;
+  grid-row: 3/5;
+}
+
+.grid-inicio_img8 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.grid-inicio_img9 {
+  grid-column: 2/3;
+  grid-row: 4/6;
+}
+
+.grid-inicio_img10 {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+.grid-inicio_img11 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+.grid-inicio_img12 {
+  grid-column: 3/5;
+  grid-row: 5/6;
+}
+
+.pie-de-pagina {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid rgb(164, 136, 97) 3px;
+  background-color: rgb(236, 195, 139);
+}
+.pie-de-pagina iframe {
+  margin: 20px;
+}
+@media (max-width: 768px) {
+  .pie-de-pagina iframe {
+    width: 300px;
+    height: 150px;
+  }
+}
+@media (max-width: 576px) {
+  .pie-de-pagina iframe {
+    width: 200px;
+  }
+}
+.pie-de-pagina ul {
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.pie-de-pagina ul p {
+  margin-bottom: 0px;
+}
+.pie-de-pagina ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.email {
+  color: #db4a39;
+}
+
+.whatsapp {
+  color: #4fcb5b;
+}
+
+.instagram {
+  color: #3f729b;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.twitter {
+  color: #55acee;
+}
+
+.barra-busqueda {
+  padding: 0px;
+  display: flex;
+  justify-content: end;
+}
+
+.barra-busqueda input {
+  width: 600px;
+  height: 35px;
+}
+
+.listado-tatus li h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.listado-tatus div li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+
+/*--------------------------------------------------------------------*/
+.formulario {
+  display: flex;
+  justify-content: center;
+}
+
+.caja-formulario {
+  border: 3px #000000 solid;
+  height: 450px;
+  width: 300px;
+  margin: 30px;
+  justify-content: center;
+}
+
+.caja-formulario form {
+  text-decoration: none;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: center;
+}
+
+/*--------------------------------------------------------------------*/
+.centrado-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+
+.centrado-nosotros div {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.imagen-nosotros {
+  width: 500px;
+  margin: 10px;
+}
+
+#texto-inferior {
+  margin: 20px;
+}
+
+/*--------------------------------------------------------------------*/
+.centrado-FAQ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.centrado-FAQ div {
+  display: flex;
+  justify-content: center;
+}
+
+.centrado-FAQ p {
+  padding: 10px;
+}
+
+.imagen-FAQ {
+  width: 300px;
+  margin: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

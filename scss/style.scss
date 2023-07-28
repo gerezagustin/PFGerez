@@ -1,0 +1,105 @@
+@import "reset";
+@import "estilos";
+@import "variables";
+@import "extends";
+@import "mediaqueries";
+@import "navegador";
+@import "portada";
+@import "lista-tatus-inicio";
+@import "footer";
+
+
+.barra-busqueda{
+    padding: 0px;
+    display: flex;
+    justify-content: end;
+}
+
+.barra-busqueda input{
+    width: 600px;
+    height: 35px ;
+}
+
+.listado-tatus li h3{
+    display: flex;
+    justify-content: center;
+}
+.listado-tatus div li{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+
+/*--------------------------------------------------------------------*/
+
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.caja-formulario{
+    border: 3px #000000 solid;
+    height: 450px;
+    width: 300px;
+    margin: 30px;
+    justify-content: center;
+}
+
+.caja-formulario form{
+    text-decoration: none;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+}
+
+/*--------------------------------------------------------------------*/
+
+.centrado-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.centrado-nosotros div{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.imagen-nosotros{
+    width: 500px;
+    margin: 10px;
+}
+
+#texto-inferior{
+    margin: 20px;
+}
+
+/*--------------------------------------------------------------------*/
+
+.centrado-FAQ{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.centrado-FAQ div{
+    display: flex;
+    justify-content: center;
+}
+
+.centrado-FAQ p{
+    padding: 10px;
+}
+
+.imagen-FAQ{
+    width: 300px;
+    margin:10px;
+}
