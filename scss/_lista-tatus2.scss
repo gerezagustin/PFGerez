@@ -1,0 +1,39 @@
+.barra-busqueda{
+    background-color: $bg-color;
+    display: flex;
+    justify-content: start;
+                i{
+                    font-size: 30px;
+                    margin: 0px 10px;
+                }
+                input{
+                    width: 600px;
+                    height: 35px ;
+                    border: none;
+                    background-color: $bg-color;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+}
+
+.listaTatus2{
+    background-color: $bg-color;
+                div li{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin: 0px 20px;
+                        h3{
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+ }
+
+
+
+
+
+
+

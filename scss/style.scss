@@ -6,30 +6,11 @@
 @import "navegador";
 @import "portada";
 @import "lista-tatus-inicio";
+@import "lista-tatus2";
 @import "footer";
 
 
-.barra-busqueda{
-    padding: 0px;
-    display: flex;
-    justify-content: end;
-}
 
-.barra-busqueda input{
-    width: 600px;
-    height: 35px ;
-}
-
-.listado-tatus li h3{
-    display: flex;
-    justify-content: center;
-}
-.listado-tatus div li{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0px 20px;
-}
 
 /*--------------------------------------------------------------------*/
 

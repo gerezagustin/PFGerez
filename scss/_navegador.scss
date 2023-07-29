@@ -13,8 +13,8 @@
                 visibility: hidden;
                 @include mobile{
                     visibility: visible;
-                    font-size: 50px;
-                    margin-right: 50px;
+                    font-size: 40px;
+                    margin-right: 20px;
                     cursor: pointer;
                     &:hover{
                         + ul{
