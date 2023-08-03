@@ -9,27 +9,46 @@
                 input{
                     width: 600px;
                     height: 35px ;
-                    border: none;
-                    background-color: $bg-color;
-                    &:focus{
-                        outline: none;
+                    @extend %input-prolijo;
+                    @include mobile{
+                        width: 80%;
                     }
                 }
 }
 
 .listaTatus2{
     background-color: $bg-color;
-                div li{
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    margin: 0px 20px;
-                        h3{
-                            display: flex;
-                            justify-content: center;
+    padding: 10px;
+                 div li{
+                        display: flex;
+                        flex-direction: column;
+                        height: 300px;
+                        margin: 10px;
+                        padding: 5px;
+                        border: 2px solid rgb(164, 136, 97);
+                        border-radius: 10px;
+                        @include mobile{
+                            height: 250px;
                         }
+                        img{
+                            height: 90%;
+                            width: 100%;
+                            padding: 0px;
+                            border-radius: 5px;
+                        }
+                            div{
+                                padding: 0px;
+                                height: 10%;
+                                h3{
+                                    padding: 0px;
+                                    display: flex;
+                                    justify-content: center;
+                                    font-family: 'Ubuntu Condensed', sans-serif;
+                                }
+                            }
+                    
                     }
- }
+}
 
 
 

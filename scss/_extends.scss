@@ -1,5 +1,29 @@
 %imagen-completa{
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
+}
+%input-prolijo{
+    border: none;
+    background-color: $bg-color;
+    border: 3px solid rgb(164, 136, 97);
+    border-radius: 10px;
+    &:focus{
+    outline: none;
+    background-color: rgb(164, 136, 97);
+    }
+}
+%boton{
+        background-color:rgb(199, 159, 104);
+        color: darkblue;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        &:hover{
+            background-color: rgb(164, 136, 97);
+        }
 }

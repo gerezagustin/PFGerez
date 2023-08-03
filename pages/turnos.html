@@ -23,19 +23,21 @@
             </ul>
          </nav>
    </header>
-   <main class="formulario">
-         <div class="caja-formulario">
+   <main class="fondo">
+         <div class="formulario">
             <form>
                <label for="nom-y-ape">Nombre y Apellido:</label>
-                  <input type="text" name="nombre-y-apellido" id="nom-y-ape" placeholder="Ingresar su Nombre y Apellido" required>
+                  <input type="text" name="nombre-y-apellido" id="nom-y-ape" placeholder="Ingrese su Nombre y Apellido" required>
                <label for="email">Email:</label>
                   <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
+               <label for="tel">Teléfono:</label>
+                  <input type="tel" name="tel" id="tel" placeholder="Ingrese su teléfono" required>
                <div>
                   <input type="checkbox" name="checkbox" id="checkbox" value="acepto" required>
                   <label for="checkbox">Acepto términos y condiciones</label>
                </div>
                   <textarea name="detalle-tatu" id="" cols="30" rows="10" placeholder="Escriba aquí los detalles del tatuaje que desea" required></textarea>
-               <label for="dma">Turno</label>
+               <label for="dma">Turno:</label>
                   <input type="date" name="diamesaño" id="dma" required>
                <button type="submit">Reservar turno</button>
                <button type="reset">Resetear</button>
