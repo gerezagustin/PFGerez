@@ -4,14 +4,11 @@
     justify-content: space-between;
     align-items: center;
     @include tablet{
-        flex-direction: column;
-    }
-    @include mobile{
         flex-direction: row;
     }
             .nav-item{
                 visibility: hidden;
-                @include mobile{
+                @include tablet{
                     visibility: visible;
                     font-size: 40px;
                     margin-right: 20px;
@@ -26,7 +23,7 @@
             ul{
                 display: flex;
                 list-style: none;
-                @include mobile{
+                @include tablet{
                     flex-direction: column;
                     align-items: center;
                     top: -500px;
@@ -46,9 +43,7 @@
                     padding: 10px 20px;
                     font-size: 30px;
                     align-items: center;
-                    @include tablet{
-                        font-size: 40px;
-                    }
+                    font-size: 40px;
                 }
             }
 }
